@@ -1,8 +1,11 @@
 import matplotlib.pyplot as plt
 
+input_values = [1,2,3,4,5]
 squares = [1,4,9,16,25]
 fig, ax = plt.subplots()
-ax.plot(squares)
+#print(plt.style.available)
+plt.style.use('seaborn-v0_8')
+ax.plot(input_values, squares)
 
 plt.show()
 
