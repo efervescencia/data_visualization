@@ -5,8 +5,9 @@ squares = [x**2 for x in input_values]
 fig, ax = plt.subplots()
 #print(plt.style.available)
 plt.style.use('seaborn-v0_8')
-#ax.plot(input_values, squares)
-ax.scatter(input_values,squares, c=(0,0.8,0),s=100)
+
+
+ax.scatter(input_values,squares, c=squares, cmap=plt.cm.Blues, s=10)
 
 #ponemos titulo y etiquetas
 ax.set_title("Square Numbers", fontsize=24)
