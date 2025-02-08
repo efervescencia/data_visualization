@@ -19,6 +19,6 @@ ax.tick_params(axis='both', which='major', labelsize=14)
 
 #establecemos el rango
 ax.axis([0,1100,0,1000000])
-
+plt.savefig('squares_plot.png', bbox_inches='tight')
 plt.show()
 
