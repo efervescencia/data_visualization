@@ -25,7 +25,14 @@ for eq_dict in all_eq_dicts:
 
 
 #mapeamos los terrenos
-data = [Scattergeo(lon=longs, lat=lats)]
+data = [{
+    'type': 'scattergeo',
+    'lon': longs,
+    'lat': lats,
+    'marker': {
+        'size': [3*mag for mag in mags],
+    },
+}]
 my_layout = Layout(title = 'Global.Earthquakes')
 
 fig = { 'data':data, 'layout': my_layout}
